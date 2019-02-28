@@ -16,7 +16,7 @@ message("OpenGL: ${OpenGL_OpenGL_FOUND}")
 message("GLX: ${OpenGL_GLX_FOUND}")
 message("EGL Lib: ${OPENGL_egl_LIBRARY}")
 
-if(OpenGL_OpenGL_FOUND)
+if(OpenGL_GLX_FOUND)
     list(APPEND CORE_LIBS OpenGL::OpenGL OpenGL::GLX)
 else()
     list(APPEND CORE_LIBS OpenGL::GL)
