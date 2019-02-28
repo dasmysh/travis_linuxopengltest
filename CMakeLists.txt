@@ -13,6 +13,7 @@ set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
 
 message("OpenGL: ${OpenGL_OpenGL_FOUND}")
+message("GLX: ${OpenGL_GLX_FOUND}")
 message("EGL Lib: ${OPENGL_egl_LIBRARY}")
 
 if(OpenGL_OpenGL_FOUND)
