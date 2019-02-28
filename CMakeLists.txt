@@ -12,6 +12,9 @@ file(GLOB CPP_FILES main.cpp)
 set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
 
+message("OpenGL: ${OpenGL_OpenGL_FOUND}")
+message("EGL Lib: ${OPENGL_egl_LIBRARY}")
+
 if(OpenGL_OpenGL_FOUND)
     list(APPEND CORE_LIBS OpenGL::OpenGL OpenGL::GLX)
 else()

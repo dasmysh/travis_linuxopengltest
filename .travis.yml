@@ -7,7 +7,6 @@ notifications:
 
 os: linux
 dist: xenial
-env: CMAKE_BUILDER="Unix Makefiles"
 addons:
   apt:
     sources:
